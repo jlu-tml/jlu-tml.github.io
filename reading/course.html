@@ -1,0 +1,1659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166924205-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166924205-1');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <!-- <script src="script/main.js"></script> -->
+    <!--list style only applied to this page-->
+    <style>
+        ul {
+            list-style:none;
+            padding-left:0;
+        }
+    </style>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../style/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <!--link href="style/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="../style/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="../style/style.css" rel="stylesheet">
+    <link href="../color/default.css" rel="stylesheet">
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+    <!-- Basic style sheet-->
+    <!-- <link rel="stylesheet" href="style/main.css"> -->
+    <link rel="stylesheet" href="../style/navbar.css">
+    <title>Welcome to UCLA Data Mining Lab</title>
+</head>
+
+<!-- <body id="index"> -->
+<!-- Nav Bar-->
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-default">
+        <a class="navbar-brand text-uppercase font-weight-bold text-wrap w-75" href="index.html">UCLA Data Mining Lab</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="people.html"><strong>People</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="research.html"><strong>Research</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publication.htm"><strong>Publication</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><strong>About</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                <a class="navbar-brand" href="../index.html">
+                    <h1>UCLA Data Mining Lab</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../publication.html">Publications</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reading Group<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-item" href="paper.html">Paper  Reading</a></li>
+                            <li><a class="nav-item" href="#">Course Material</a></li>
+                            <!--li><a href="#">Example menu</a></li>
+                            <li><a href="#">Example menu</a></li-->
+                        </ul>
+                    </li>
+                    <!-- <li class="">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li> -->
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Example menu</a></li>
+                            <li><a href="#">Example menu</a></li>
+                            <li><a href="#">Example menu</a></li>
+                        </ul>
+                        </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id='course_reading_group'>
+        <br><br><br> <br><br><br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                        <h2>Course Reading Groups</h2>
+                        <h3>Spring 2024 Schedule: Neurosymbolic Reasoning</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseSpring2022">
+                                    Winter 2024 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseSpring2022" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 100px">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 </td>
+                                                <td>Formal Methods Introduction & SAT Solving Part 1 (Formal Methods)</td>
+                                                <td>Zongyue Qin</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://people.eecs.berkeley.edu/~sseshia/219c/lectures/Intro.pdf" target="_blank">Formal Methods Introduction & Overview</a></li>
+                                                        <li><a href="https://people.eecs.berkeley.edu/~sseshia/219c/lectures/SATSolving.pdf" target="_blank">Boolean Satisfiability Solving</a></li>
+                                                    </ul>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>SAT Solving Part 2 and Binary Decision Diagrams (Formal Methods)</td>
+                                                <td>Weikai Li</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://people.eecs.berkeley.edu/~sseshia/219c/EECS219C-ScribedNotes-Spr2015.pdf" target="_blank">Boolean Satisfiability Solving </a></li>
+                                                        <li><a href="https://people.eecs.berkeley.edu/~sseshia/219c/lectures/BinaryDecisionDiagrams.pdf" target="_blank">Binary Decision Diagrams</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Satisfiability modulo theories Part I & II (Formal Methods)</td>
+                                                <td>Fang Sun</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://people.eecs.berkeley.edu/~sseshia/219c/EECS219C-ScribedNotes-Spr2015.pdf" target="_blank">Satisfiability modulo theories</a></li>
+                                                        <li><a href="https://people.eecs.berkeley.edu/~sseshia/219c/lectures/SyGuS.pdf" target="_blank">Syntax-Guided Synthesis</a></li>
+                                                        <li><a href="https://ths.rwth-aachen.de/wp-content/uploads/sites/4/slides-1.pdf" target="_blank">SMT Solving for AI Planning</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Satisfiability modulo theories Part III & Syntax Guided Synthesis  (Formal Methods)</td>
+                                                <td>Yijia Xiao</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://leanprover-community.github.io/learn.html" target="_blank">Learn Lean</a></li>
+                                                        <li><a href="https://adam.math.hhu.de/#/g/leanprover-community/NNG4" target="_blank">Natural Number Game</a></li>
+                                                        <li><a href="https://github.com/PatrickMassot/GlimpseOfLean" target="_blank">Glimpse of Lean</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Learning Lean 4 (overview)</td>
+                                                <td>Xiaoxuan Wang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://leanprover-community.github.io/mathematics_in_lean/" target="_blank">Mathematics in Lean: Introduction, Basics</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Mathematics in Lean</td>
+                                                <td>Xiao Luo</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://leanprover-community.github.io/mathematics_in_lean/" target="_blank">Mathematics in Lean: Logic, Sets and Functions</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Towards an AI Mathematician</td>
+                                                <td>Guest Speaker: Kaiyu Yang</td>
+                                                <td>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Mathematics in Lean 3 & 4</td>
+                                                <td>Arjun Subramonian</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://leanprover-community.github.io/mathematics_in_lean/" target="_blank">Mathematics in Lean: Advanced Topics</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+
+                        <h3>Winter 2024 Schedule: Neurosymbolic Reasoning</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseSpring2022">
+                                    Winter 2024 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseSpring2022" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 100px">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 </td>
+                                                <td>Overview and Basics </td>
+                                                <td>Jeehyun Hwang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://www.neurosymbolic.org/summerschool.html  " target="blank">Neurosymbolic Reasoning </a></li>
+                                                    </ul>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>AlphaGeometry: An Olympiad-level AI system for geometry</td>
+                                                <td>Fred Xu</td>
+                                                <td>
+                                                <ul>
+                                                        <li><a href="https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/ " target="blank">AlphaGeometry </a></li>
+                                                </ul></td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://docs.google.com/presentation/d/1vSIK-YDujWLKu5-EZpb9xK1opHpAzh7X/edit?usp=sharing&ouid=113846868862847743230&rtpof=true&sd=true" target="blank">Slides</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Neurosymbolic Learning and Reasoning for Trustworthy AI</td>
+                                                <td>Guest Speaker: Zhe Zeng</td>
+                                                <td>
+                                                    <ul>
+                                                        <li></li>
+                                                    </ul>
+                                                    <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>TrustworthyML in the Era of Foundation Models </td>
+                                                <td>Guest Speaker: Chirag Agarwal</td>
+                                                <td>
+                                                    <ul>
+                                                        <li></li>
+                                                    </ul>
+                                                    <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Neurosymbolic Program Architecture Search </td>
+                                                <td>Derek Xu</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://www.neurosymbolic.org/summerschool.html" target="blank">Neurosymbolic Reasoning</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                <ul>
+                                                    <li><a href="https://docs.google.com/presentation/d/1ww18jrYOzLOAfuisL3nYWH-LLDqgIJLWaKgU19Qv87M/edit?usp=sharing" target="blank">Slides</a></li>
+                                                </ul>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+
+
+                        <h3>Fall 2023 Schedule: Physics-Informed Machine Learning (PIML)</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseSpring2022">
+                                    Fall 2023 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseSpring2022" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 100px">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 - 2</td>
+                                                <td>Differentiable Physics with NNs </td>
+                                                <td>Fang Sun</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://physicsbaseddeeplearning.org/overview.html " target="blank">PBDL Introduction (Review), PBDL Physical Loss, PBDL Differentiable Physics</a></li>
+                                                    </ul>
+                                                <td><a href="https://docs.google.com/presentation/d/1h8EoevzLwY3OokvWty3St-wF7cyEKp1CdxNDvTd2JRs/edit?usp=sharing" target="blank">Slides</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Prof. Nitesh Chawla visits ScAI</td>
+                                                <td>Guest Speaker: Nitesh Chawla</td>
+                                                <td>
+                                                    
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Learning to Assess Disease and Health At Your Home</td>
+                                                <td>Guest Speaker: Yuzhe Yang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li></li>
+                                                    </ul>
+                                                    <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Differentiable Physics with NNs 2 </td>
+                                                <td>Chenchen Ye</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://physicsbaseddeeplearning.org/overview.html " target="blank">PBDL Introduction (Review), PBDL Physical Loss, PBDL Differentiable Physics</a></li>
+                                                    </ul>
+                                                    <td><a href="https://docs.google.com/presentation/d/1oMzVKkfqdfzKiC3b9RZgIn9rrG-_TsXniRk5Ly_c0yQ/edit?usp=sharing" target="blank">Slides</a> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Improved Gradients</td>
+                                                <td>Yuanzhou Chen</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://physicsbaseddeeplearning.org/overview.html " target="blank">PBDL Introduction (Review), PBDL Physical Loss, PBDL Differentiable Physics</a></li>
+                                                    </ul>
+
+                                                <td><a href="https://docs.google.com/presentation/d/1pDRX-AmjNRP2hLKQZ4V8AzUM00_v-HEtKj1Avvcf-9o/edit?usp=sharing" target="blank">Slides</a> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Simulation </td>
+                                                <td>Arvind Vepa</td>
+                                                <td>
+                                                    <ul>
+                                                     </ul>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+
+                        <h3>Winter 2023 Schedule: Diffusion Models and NeRF</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseSpring2022">
+                                    Winter 2023 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseSpring2022" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 100px">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Latent Diffusion (Stable-Diffusion) + Diffusion-LM</td>
+                                                <td>Patricia (Zhiping) Xiao</td>
+                                                <td>
+                                                    <ul>
+                                                    </ul>
+                                                <td><a href="https://web.cs.ucla.edu/~patricia.xiao/files/Win2023_Math_Reading_Group_Stable_Diffusion.pdf" target="blank">Slides</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Latent Diffusion (Stable-Diffusion) + Diffusion-LM</td>
+                                                <td>Patricia (Zhiping) Xiao</td>
+                                                <td>
+                                                    <ul>
+                                                    </ul>
+                                                <td><a href="https://web.cs.ucla.edu/~patricia.xiao/files/Win2023_Math_Reading_Group_Diffusion_Language_Model.pdf" target="blank">Slides</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Score-based Method</td>
+                                                <td> Xiao Luo</td>
+                                                <td>
+                                                    
+                                                    <td><a href="https://docs.google.com/presentation/d/1rzNnpBqJOvCaWW43UpBH5Yu9NhsO7jHJ9GYSsfdK9Xs/edit?usp=sharing" target="blank">Drive</a> </td>
+                                                    <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Image Editing</td>
+                                                <td>Yunsheng Bai</td>
+                                                <td>
+                                                    <ul>
+                                                      
+                                                    </ul>
+                                                   
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Faster Inference of Diffusion</td>
+                                                <td>Fred Xu</td>
+                                                <td>
+                                                    <ul>
+                                                       
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Planning via Diffusion </td>
+                                                <td>Xiusi Chen</td>
+                                                <td>
+                                                    <ul>
+                                                    </ul>
+                                                  <td><a href="https://docs.google.com/presentation/d/1rzNnpBqJOvCaWW43UpBH5Yu9NhsO7jHJ9GYSsfdK9Xs/edit?usp=sharing" target="blank">Drive</a> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+
+                        <h3>Fall 2022 Schedule: Advance of Generative Model: Diffusion Model & NeRF</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseFall2022">
+                                    Fall 2022 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseFall2022" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 200px">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Diffusion Model Introduction</td>
+                                                <td>Fred Xu</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2208.11970" target="blank">Short Tutorial</a></li>
+                                                        <li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#forward-diffusion-process" target="blank">Blogpost by Lilian Weng</a></li>
+                                                        <li><a href="https://yang-song.net/blog/2021/score/" target="blank">Blog post by Yang Song</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2006.11239" target="blank">DDPM (Denoising diffusion probabilistic models)</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2010.02502" target="blank">DDIM (Denoising diffusion implicit models)</a></li>
+                                                    </ul>
+                                                <td> 
+                                                    <a href="https://docs.google.com/presentation/d/1g-7Zs7T06PTvuq_ei33DmAVwyd8-o6GY/edit#slide=id.p1" target="blank">Slides</a>
+                                                </td>
+                                                <td>
+                                                    <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                        <iframe
+                                                            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                            src="https://tube.rvere.com/embed?v=mOMIpT0EUmk"
+                                                            title="YouTube video player"
+                                                            frameBorder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowFullScreen>
+                                                        </iframe>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>More on Diffusion Models</td>
+                                                <td>Ziniu Hu</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2208.11970" target="blank">Short Tutorial</a></li>
+                                                        <li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#forward-diffusion-process" target="blank">Blogpost by Lilian Weng</a></li>
+                                                        <li><a href="https://yang-song.net/blog/2021/score/" target="blank">Blog post by Yang Song</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2006.11239" target="blank">DDPM (Denoising diffusion probabilistic models)</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2010.02502" target="blank">DDIM (Denoising diffusion implicit models)</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Diffusion model for text-to-image generation</td>
+                                                <td> Shichang Zhang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2205.11487" target="blank">Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</a></li>
+                                                        <li><a href="https://colab.sandbox.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="blank">Disco Diffusion</a></li>
+                                                    </ul>
+                                                <td> <a href="https://drive.google.com/file/d/1OnCxxFn9NIEtPAYkB2ggHZ0ZMaBzrO4y/view?usp=sharing">Slides</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Imagen + Video Diffusion</td>
+                                                <td>Zongyue QIn </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2204.06125" target="blank">Hierarchical Text-Conditional Image Generation with CLIP Latents
+            
+                                                        </a></li>
+                                                        <li><a href="https://arxiv.org/abs/2204.03458" target="blank">Video Diffusion Models</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Palette + Composable Diffusion</td>
+                                                <td>Jeehyun Hwang </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2108.01073" target="blank">SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations
+                                                        </a></li>
+                                                        <li><a href="https://arxiv.org/abs/2111.05826" target="blank">Palette: Image-to-Image Diffusion Models</a></li>
+                                                        <li><a href="https://arxiv.org/pdf/2206.01714.pdf" target="blank">Composable-Diffusion Compositional Visual Generation with Composable Diffusion Models</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Torsional Diffusion + EDM + DIGRESS</td>
+                                                <td> Yanqiao Zhu </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2203.02923" target="blank">GeoDiff: a Geometric Diffusion Model for Molecular Conformation Generation
+                                                        </a></li>
+                                                        <li><a href="https://arxiv.org/abs/2206.01729" target="blank">Torsional Diffusion for Molecular Conformer Generation</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+            
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Classifier-free disfussion guidance</td>
+                                                <td> Song Jiang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2205.09991" target="blank">Planning with Diffusion for Flexible Behavior Synthesis
+                                                        </a></li>
+                                                        <li><a href="https://arxiv.org/abs/2207.12598" target="blank">CLASSIFIER-FREE DIFFUSION GUIDANCE</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+            
+                                      <!--   <tbody>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Latent Diffusion + Diffusion-LM</td>
+                                                <td> </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2112.10752" target="blank">High-Resolution Image Synthesis with Latent Diffusion Models
+                                                        </a></li>
+                                                        <li><a href="https://arxiv.org/abs/2205.14217" target="blank">Diffusion-LM Improves Controllable Text Generation</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody> -->
+                                       <!--  <tbody>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>NeRF</td>
+                                                <td> </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2003.08934" target="blank">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
+                                                        </a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody> -->
+                                     <!--    <tbody>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>Instant NeRF</td>
+                                                <td> </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://nvlabs.github.io/instant-ngp/" target="blank">Instant Neural Graphics Primitives with a Multiresolution Hash Encoding
+                                                        </a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>                         -->
+                                       <!--  <tbody>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Object NeRF</td>
+                                                <td> </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://arxiv.org/abs/2107.07905" target="blank">Unsupervised Discovery of Object Radiance Fields
+                                                        </a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody> -->
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+
+                        <h3>Spring 2022 Schedule: Large Language Model</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseSpring2022">
+                                    Spring 2022 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseSpring2022" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 100px">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Introduction + Capabilities</td>
+                                                <td>Shichang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/introduction/" target="blank">Introduction</a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/capabilities/" target="blank">Capabilities</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2108.07258" target="blank">On the Opportunities and Risks of Foundation Models (section 1, excluding 1.4).</a></li>
+                                                    </ul>
+                                                <td><a href="https://drive.google.com/file/d/19LvYkJdYqydHFPI_qcsU75DR665PAc80/view?usp=sharing" target="blank">Drive</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Modeling + Training</td>
+                                                <td>Yewen</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/modeling/" target="blank">Modeling</a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/training/" target="blank">Training</a></li>
+                                                        <li><a href="https://huggingface.co/blog/encoder-decoder" target="blank">Hugging face blog</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2009.06732" target="blank">Efficient Transformers: A Survey</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2003.10555" target="blank">ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators</a></li>
+                                                    </ul>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Modular architectures + Adaptation</td>
+                                                <td>Yunsheng</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/selective-architectures/" target="blank">Selective Architectures</a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/adaptation/" target="blank">Adaptaion</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2109.01652" target="blank">Finetuned Language Models Are Zero-Shot Learners</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2110.08207" target="blank">Multitask Prompted Training Enables Zero-Shot Task Generalization</a></li>
+                                                    </ul>
+                                                    <td><a href="https://docs.google.com/presentation/d/1EHW_bR97yyiKRjdKsInQBEwDNaDMF2hasWPZykLUE7Y/edit?usp=sharing" target="blank">Drive</a> </td>
+                                                    <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Harms I + Harms II</td>
+                                                <td>Roshni</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/harms-1/" target="blank">Harms-1
+                                                        </a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/harms-2/" target="blank">Harms-2</a></li>
+                                                        <li><a href="https://dl.acm.org/doi/10.1145/3442188.3445922" target="blank">On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2009.11462" target="blank">RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models</a></li>
+                                                    </ul>
+                                                    <td><a href="https://docs.google.com/presentation/d/1oMzVKkfqdfzKiC3b9RZgIn9rrG-_TsXniRk5Ly_c0yQ/edit?usp=sharing" target="blank">Drive</a> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Data + Security and privacy</td>
+                                                <td>Derek</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/data/" target="blank">Data</a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/security/" target="blank">Security</a></li>
+                                                        <li><a href="https://arxiv.org/abs/2101.00027" target="blank">The Pile: An 800GB Dataset of Diverse Text for Language Modeling</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Parallelism + Scaling laws </td>
+                                                <td>Zongyue</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/parallelism/" target="blank">Parallelism
+                                                        </a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/scaling-laws/" target="blank">Scaling Laws</a></li>
+                                                        <li><a href="https://www.microsoft.com/en-us/research/blog/deepspeed-extreme-scale-model-training-for-everyone/">DeepSpeed: Extreme-scale model training for everyone</a></li>
+                                                    </ul>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Visual+Language</td>
+                                                <td>Ziniu</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://openai.com/blog/clip/" target="blank">OpenAI ClIP
+                                                        </a></li>
+                                                        <li><a href="https://arxiv.org/abs/2108.10904" target="blank">SimVLM: Simple Visual Language Model Pretraining with Weak Supervision</a></li>
+                                                    </ul>
+                                                <td> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Legality + Environmental Impact</td>
+                                                <td>Junheng Hao</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/legality/" target="blank">Legality
+                                                        </a></li>
+                                                        <li><a href="https://stanford-cs324.github.io/winter2022/lectures/environment/" target="blank">Environment</a></li>
+                                                    </ul>
+                                                <td><a href="https://docs.google.com/presentation/d/1VcRmlrw3ntFCEn_bMeghzOZrG-TgcLlW5pVcyf3m5Ec/edit?usp=sharing" target="blank">Drive</a> </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+                        <h3>Fall 2021 Schedule: Geometry</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseFall2021">
+                                    Fall 2021 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseFall2021" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th style="width: 50px;">Week</th>
+                                    <th style="width: 120px;">Topic</th>
+                                    <th style="width: 100px;">Presenter</th>
+                                    <th style="width: 200px">Reading Materials</th>
+                                    <th style="width: 80px;">Slide Link</th>
+                                    <th style="width: 200px;">Youtube Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Introduction to Geometry</td>
+                                    <td>Song Jiang</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://www.dropbox.com/s/itwbya5l3epvnje/20cs468-09-14_Intro_v1.pptx?dl=0" target="blank">Lecture 1 in Non-Euclidean Methods in Machine Leraning (NEM)</a></li>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter1.pdf" target="blank">Chapter in Shape Analysis (SA)</a></li>
+                                        </ul>
+                                    <td><a href="https://docs.google.com/presentation/d/1g1_4E-tzVbv5YTbj8H6Nz7IK9ek8S-S3x7TdDImWGX0/edit?usp=sharing" target="blank">Drive</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Curves</td>
+                                    <td>Shichang Zhang</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter3.pdf" target="blank">Chapter 3 in SA</a></li>
+                                            <li><a href="https://liavas.net/courses/math430/files/Curves.pdf" target="blank">Chapter 1 in DG</a></li>
+                                        </ul>
+                                    <td><a href="https://drive.google.com/file/d/1odMB37ETC0-KsR0EwXhIIxYeBcDgkrIk/view?usp=sharing" target="blank">Drive</a></td>
+                                    <td><div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                        <iframe
+                                            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                            src="https://tube.rvere.com/embed?v=qWhfZoBAsjY"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen>
+                                        </iframe>
+                                    </div></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Surfaces and Manifolds</td>
+                                    <td>Zongyue Qin</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter4.pdf" target="blank">Chapter 4 in SA</a></li>
+                                            <li><a href="https://liavas.net/courses/math430/files/Surfaces.pdf" target="blank">Chapter 2 in DG</a></li>
+                                        </ul>
+                                    <td><a href="https://docs.google.com/presentation/d/1Ryr_QN8kr05_tjGzjAeKg_MYqqx2Uujjar6gZj9rtPg/edit?usp=sharing" target="blank">Drive</a></td>
+                                    <td>
+                                        <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                            <iframe
+                                                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                src="https://tube.rvere.com/embed?v=317nbckFYt0"
+                                                title="YouTube video player"
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen>
+                                            </iframe>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Curvature</td>
+                                    <td>Yunsheng Bai</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter5.pdf" target="blank">Chapter 5 in SA</a></li>
+                                            <li><a href="https://liavas.net/courses/math430/files/Surfaces_part2.pdf" target="blank">Chapter 3 in DG</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Geodesics Distances</td>
+                                    <td>Ziniu Hu</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter6.pdf" target="blank">Chapter 6 in SA</a></li>
+                                            <li><a href="https://liavas.net/courses/math430/files/Surfaces_part3.pdf" target="blank">Chapter 4 in DG</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Optimization on Riemannian manifolds</td>
+                                    <td>Arjun Subramonian</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://www.dropbox.com/s/yon9u231cc2sgia/20cs468-09-21_opt.pdf?dl=0" target="blank">Lec 5 in NEM</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Inverse Distance Problems</td>
+                                    <td>Fred Xu</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter7.pdf" target="blank">Chapter 7 in SA</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td>
+                                        <ul>
+                                            <ul>
+                                                <div style="height: 100px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=dcmn-iTlJG0"
+                                                        title="YouTube video player"
+                                                        frameBorder="10"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </ul>
+                                            <ul>
+                                                <div style="height: 100px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=wtxLcPi2ygo"
+                                                        title="YouTube video player"
+                                                        frameBorder="10"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </ul>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Algorithms on Riemannian manifolds</td>
+                                    <td>Kewei Cheng</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://www.dropbox.com/s/1gqksjnfydv7h2w/20cs468-09-30-alg.pdf?dl=0" target="blank">Chapter 6 in NEM</a></li>
+                                            <li><a href="https://www.dropbox.com/s/vvrdkxta3zkshbu/cs468_geodesics.pdf?dl=0" target="blank">Chapter 10 in NEM</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td>
+                                        <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                            <iframe
+                                                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                src="https://tube.rvere.com/embed?v=ZGDAPnhO72w"
+                                                title="YouTube video player"
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen>
+                                            </iframe>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Probability on Riemannian manifolds & Sampling</td>
+                                    <td>Derek Xu</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://www.dropbox.com/s/r8u0bt543mlfz3w/CS468_guest_lecture_nina_miolane.pdf?dl=0" target="blank">Chapter 8 in NEM</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Riemannian Bayesian Inference</td>
+                                    <td>Zijie Huang</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://www.dropbox.com/s/1gqksjnfydv7h2w/20cs468-09-30-alg.pdf?dl=0" target="blank">Chapter 9 in NEM</a></li>
+                                        </ul>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Matrix Manifolds and Applications in Computer Vision</td>
+                                    <td>Roshni Iyer</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://www.dropbox.com/s/3cqy6j7795ehfws/20cs468-09-21_matrices.pdf?dl=0" target="blank">Chapter 7 in NEM</a></li>
+                                        </ul>
+                                    <td><a href="https://drive.google.com/file/d/1c4L2lwJeOm1l8AY1DExnGuMJAHws9HCn/view?usp=sharing">Drive</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>From Manifolds to Graphs: Laplacian</td>
+                                    <td>Zhiping(Patricia) Xiao</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter9.pdf" target="blank">Chapter 9 in SA</a></li>
+                                        </ul>
+                                    <td><a href="http://web.cs.ucla.edu/~patricia.xiao/files/Winter22_Math_ReadingGroup.pdf">File</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+
+                        <h3>Winter 2021 Schedule: Graphical Model</h3>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseWinter2021">
+                                    Winter 2021 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseWinter2021" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                <table class="table table-bordered">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th style="width: 50px;">Week</th>
+                                            <th style="width: 120px;">Topic</th>
+                                            <th style="width: 100px;">Presenter</th>
+                                            <th style="width: 200px">Reading Materials</th>
+                                            <th style="width: 80px;">Slide Link</th>
+                                            <th style="width: 200px;">Youtube Link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Introduction to GM + Undirected GMs</td>
+                                            <td>Arjun Subramonian</td>
+                                            <td>
+                                                <ul>
+                                                    <li><a href="https://www.cs.cmu.edu/~epxing/Class/10708-20/lectures/lecture01-Introduction.pdf" target="blank">Slide 1 from CMU</a></li>
+                                                    <li><a href="https://www.cs.cmu.edu/~epxing/Class/10708-20/lectures/lecture02-MRFrepresentation.pdf" target="blank">Slide 2 from CMU</a></li>
+                                                </ul>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Directed GMs + Exact Inference</td>
+                                            <td>Shirley Chen</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Parameter Estimation + HMM and CRF</td>
+                                            <td>Derek Xu</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Variational Inference</td>
+                                            <td>Yewen Wang</td>
+                                            <td></td>
+                                            <td><a href="https://drive.google.com/file/d/1o0i1fiPU4S0CzzV1XjJ3T-xkArblKjYK/view" target="blank">Drive</a></td>
+                                            <td>
+                                                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=KJmWkIVq_7E"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Sampling</td>
+                                            <td>Fred Xu</td>
+                                            <td></td>
+                                            <td><a href="https://drive.google.com/file/d/1EDO2ArELO5JLvSMhdt0wOsoEzUqo3Ege/view?usp=sharing" target="blank">Drive</a></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Deep Generative Models</td>
+                                            <td>Zhiping(Patricia) Xiao</td>
+                                            <td>
+                                                <ul>
+                                                    <li><a href="http://web.cs.ucla.edu/~patricia.xiao/files/ReadingGroup_DGM_2021Win.pdf" target="blank">File</a></li>
+                                                </ul>
+                                            <td></td>
+                                            <td>
+                                                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=H_b_RPQUJ4U"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Text Generation + Structure Learning</td>
+                                            <td>Ziniu Hu</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=jW7CRyjdctM"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Causality</td>
+                                            <td>Song Jiang</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=Psxf8PSe7JY"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Reinforcement Learning as Inference</td>
+                                            <td>Roshni Iyer</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=eA-jy-k-3Wk"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Gaussian Process + Determinant Point Process</td>
+                                            <td>Shichang Zhang</td>
+                                            <td></td>
+                                            <td><a href="https://drive.google.com/file/d/117-U7K-LPMIWZral8zGf680kDgnsptwB/view?usp=sharing">Drive</a></td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                            <iframe
+                                                                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                                src="https://tube.rvere.com/embed?v=sBOs4-TkkHg"
+                                                                title="YouTube video player"
+                                                                frameBorder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                allowFullScreen>
+                                                            </iframe>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                            <iframe
+                                                                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                                src="https://tube.rvere.com/embed?v=R7nrismImGc"
+                                                                title="YouTube video player"
+                                                                frameBorder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                allowFullScreen>
+                                                            </iframe>
+                                                        </div> 
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Spectral Graphical Models + Large-scale Algorithms and Systems</td>
+                                            <td>Zijie Huang</td>
+                                            <td></td>
+                                            <td><a href="https://drive.google.com/file/d/1dcVqJFYhEfTasltej4XOnoBHjGIhqjgU/view?usp=sharing">Drive</a></td>
+                                            <td>
+                                                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                    <iframe
+                                                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                        src="https://tube.rvere.com/embed?v=EtLwxE1Djrk"
+                                                        title="YouTube video player"
+                                                        frameBorder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Meta-Learning + Robust Machine Learning</td>
+                                            <td>Yunsheng Bai</td>
+                                            <td>
+                                                <ul>
+                                                    <li><a href="http://groups.csail.mit.edu/gdpgroup/assets/6838_spring_2021/chapter9.pdf" target="blank">Chapter 9 in SA</a></li>
+                                                </ul>
+                                            <td><a href="http://web.cs.ucla.edu/~patricia.xiao/files/Winter22_Math_ReadingGroup.pdf">File</a></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- END Panel body -->
+                        </div> <!-- END Collapse section -->
+                    </div> 
+
+                        <h3>Fall 2020 Schedule: Spectral Graph Theory & Applications</h3>
+                        <ul>
+                            <li><a href=" http://www.cs.yale.edu/homes/spielman/462/syllabus.html" target="blank"> Course URL on Yale</a></li>
+                            <li><a href="http://cs-www.cs.yale.edu/homes/spielman/sagt/" target="blank">Textbook One by Daniel Spielman</a></li>
+                            <li><a href="https://viterbi-web.usc.edu/~shanghua/teaching/Fall2019-670/networkDataAnalysisPrintedBook.pdf" target="blank"> Textbook Two by Shanghua Teng</a></li>
+                        </ul>
+                        <div class="panel panel-primary accordion"> <!-- Panel (collapasable) -->
+                            <div class="panel-heading"> <!-- Panel head -->
+                                <a class="accordion-toggle" style="color:white; font-family: Montserrat, sans-serif; font-weight: 700;" data-toggle="collapse" data-parent=".accordion" href="#collapseFall2020">
+                                    Fall 2020 Schedule
+                                </a>           
+                            </div> <!-- END Panel head -->
+                            <div id="collapseFall2020" class="panel-collapse collapse in"> <!-- Collapsable section -->
+                                <div class="panel-body"> <!-- Panel body -->
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th style="width: 50px;">Week</th>
+                                                <th style="width: 120px;">Topic</th>
+                                                <th style="width: 100px;">Presenter</th>
+                                                <th style="width: 200px">Reading Materials</th>
+                                                <th style="width: 80px;">Slide Link</th>
+                                                <th style="width: 200px;">Youtube Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>The Laplacian Matrix and Spectral Graph Drawing. Courant-Fischer.</td>
+                                                <td>Zhiping Xiao</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Chapter 1-3 Textbook One</li>
+                                                        <li>Textbook Tow 2.4</li>
+                                                    </ul>
+                                                <td><a href="http://web.cs.ucla.edu/~patricia.xiao/files/Math_Reading_Group_20201008.pdf" target="blank">Slide</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>The Adjacency Matrix, interlacing, and Perron-Frobenius. Eigenvalue comparison theorems.</td>
+                                                <td>Yewen Wang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Chapter 4-5 Textbook One</li>
+                                                    </ul>
+                                                <td><a href="https://drive.google.com/file/d/1iQfRkxp1kz7PbGN5ZEwXODfalQLSBprU/view?usp=sharing" target="blank">Slide</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>The Zoo of graphs. Bounding eigenvalues by test vectors. Eigenvalues of random graphs</td>
+                                                <td>Shirley Chen</td>
+                                                <td>Textbook One Chapter 6 & 8</td>
+                                                <td><a href="https://drive.google.com/file/d/13Rm36K2T9Y-T1Ys3dpHxUAoReeR94gMO/view?usp=sharing" target="blank">Slide</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Eigenvalues and Graph Structure: cuts, partitions, and coloring.</td>
+                                                <td>Kewei Cheng</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Textbook One Chapter 19, 20</li>
+                                                        <li>Textbook Two Chapter 5</li>
+                                                    </ul>
+                                                </td>
+                                                <td><a href="https://drive.google.com/file/d/1VhI0pggje9HcP5PSmvvdluEeHtPyrEZO/view?usp=sharing" target="blank">Slide</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Random Walk</td>
+                                                <td>Zijie Huang</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Textbook One Chapter 19, 20</li>
+                                                        <li>Textbook Two Chapter 5</li>
+                                                    </ul>
+                                                </td>
+                                                <td><a href="https://drive.google.com/file/d/191GSEonHYwAf_yBdNql00lJdEzdCDzck/view?usp=sharing" target="blank">Slide</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Graph Sparsification</td>
+                                                <td>Arjun Subramonian</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Textbook One Chapter 32s</li>
+                                                        <li>Textbook Two Chapter 6</li>
+                                                    </ul>
+                                                </td>
+                                                <td><a href="https://www.overleaf.com/read/nnmhwtppckth" target="blank">Slide</a></td>
+                                                <td>
+                                                    <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                                                        <iframe
+                                                            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                                                            src="https://tube.rvere.com/embed?v=GGLes08Kx24"
+                                                            title="YouTube video player"
+                                                            frameBorder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowFullScreen>
+                                                        </iframe>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Graph Clustering</td>
+                                                <td>Ziniu Hu</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Textbook One Chapter 22</li>
+                                                        <li>Textbook Two Chapter 4</li>
+                                                    </ul>
+                                                </td>
+                                                <td><a href="https://drive.google.com/file/d/12ybK-lb2MLn2oxVRQpZpTyUaUvFElxiY/view?usp=sharing" target="blank">Slide</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- END Panel body -->
+                            </div> <!-- END Collapse section -->
+                        </div> 
+                    <br/>      
+        </div>
+    </div>
+
+    <!-- scroll back-->
+    <a id="back-to-top" href="#course_reading_group" class="btn btn-light btn-lg back-to-top" role="button"><svg
+            class="bi bi-chevron-double-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M7.646 2.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L8 3.707 2.354 9.354a.5.5 0 11-.708-.708l6-6z"
+                clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+                d="M7.646 6.646a.5.5 0 01.708 0l6 6a.5.5 0 01-.708.708L8 7.707l-5.646 5.647a.5.5 0 01-.708-.708l6-6z"
+                clip-rule="evenodd" />
+        </svg></a>
+
+
+
+    <!-- /Section: footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <section class="col-lg-4">
+                            <h5>Mailing Address</h5>
+                            <address>
+                                    3551 Boelter Hall  <br>
+                                    University Of California, Los Angeles <br>
+                                    CA 90095 <br>
+                                </address>
+
+                        </section>
+
+                        <section class="col-lg-4">
+                            <h5>Code Repository</h5>
+                            <!-- <p> We share our code in this <a href="https://github.com/uclaml" style="text-decoration: underline;">GitHub repository</a>  -->
+                            <!-- to the community.</p> -->
+                            <p> Follow our Github repository <br> <a class="github-button" href="https://github.com/uclaml" aria-label="Follow @uclaml on GitHub">Follow @uclaml</a>
+                            </p>
+                        </section>
+
+                        <section class="col-lg-4">
+                            <h5>Contact Us</h5>
+
+                            <address>
+                                <strong>Email: </strong> 
+                                <a href="mailto:#">yzsun@cs.ucla.edu</a>
+                                <br>
+                                <strong>Twitter: </strong> 
+                                <a href="https://twitter.com/YizhouSun?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="normal" data-show-screen-name="false" data-show-count="false">Follow @YizhouSun</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </address>
+
+                        </section>
+
+                    </div>
+
+                    <p> <b>The design and template of this website are adapted from <a href="https://www.uclaml.org">UCLA Artificial General Intelligence Lab</a>.</b> </p>
+                    <p>&copy;Copyright 2022 UCLA Data Mining Lab. All rights reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Core JavaScript Files -->
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/jquery.easing.min.js"></script>
+    <script src="../script/jquery.scrollTo.js"></script>
+    <script src="../script/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../script/custom.js"></script>
+
+</body>
+
+</html>
