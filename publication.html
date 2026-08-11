@@ -36,12 +36,13 @@
     <!-- Basic style sheet-->
     <!-- <link rel="stylesheet" href="style/main.css"> -->
     <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/modern.css">
     <link rel="icon" type="image/x-icon" href="./img/logo.jpg"/>
     <title>JLU Trustworthy Machine Learning Group</title>
 </head>
 
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body id="page-top" class="page-publication" data-spy="scroll" data-target=".navbar-custom">
     <!-- Preloader -->
     <div id="preloader">
         <div id="load"></div>
@@ -87,20 +88,103 @@
         </div>
     </nav>
 
-    <div id='publist'>
-        <br><br><br> <br><br><br>
-    </div>
+    <main id="publist" class="publication-page">
+        <section class="publication-heading" aria-labelledby="publication-title">
+            <div>
+                <span class="eyebrow">Research archive · <span id="publication-range">—</span></span>
+                <h1 id="publication-title">Publications</h1>
+            </div>
+            <p>A concise record of our work in reliable AI, weak supervision, graph learning, and multimodal intelligence.</p>
+        </section>
 
-    <div class="container">
-        <h2> Full Publication List</h2>
-        
-        <ol>
+        <div class="container">
+            <section class="publication-overview" aria-label="Publication statistics">
+                <div class="publication-stat-grid">
+                    <article class="publication-stat">
+                        <span class="stat-label">All publications</span>
+                        <strong id="stat-total">—</strong>
+                        <span class="stat-foot">in the current archive</span>
+                    </article>
+                    <article class="publication-stat">
+                        <span class="stat-label">CCF-A papers</span>
+                        <strong id="stat-ccfa">—</strong>
+                        <span class="stat-foot">based on listed labels</span>
+                    </article>
+                    <article class="publication-stat">
+                        <span class="stat-label">CCF-A share</span>
+                        <strong id="stat-ccfa-share">—</strong>
+                        <span id="stat-ccfa-share-foot" class="stat-foot">of all publications</span>
+                    </article>
+                    <article class="publication-stat">
+                        <span class="stat-label">Latest year</span>
+                        <strong id="stat-latest-year">—</strong>
+                        <span class="stat-foot">most recent archive entry</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="publication-dashboard" aria-label="Publication analytics">
+                <div class="publication-chart-panel">
+                    <div class="publication-chart-header">
+                        <div>
+                            <span class="eyebrow">Yearly output</span>
+                            <h3>Publication trend</h3>
+                        </div>
+                        <span class="trend-summary">Archive overview</span>
+                    </div>
+                    <div class="trend-legend" aria-label="Trend legend">
+                        <span class="trend-legend-item"><i class="legend-swatch total" aria-hidden="true"></i>Total papers</span>
+                        <span class="trend-legend-item"><i class="legend-swatch ccf-a" aria-hidden="true"></i>CCF-A papers</span>
+                    </div>
+                    <div id="publication-trend" class="publication-trend" role="img" aria-label="Number of publications and CCF-A publications by year">
+                        <div id="publication-ccfa-line" class="trend-line-layer" aria-hidden="true"></div>
+                    </div>
+                    <div id="publication-trend-labels" class="publication-trend-labels" aria-hidden="true"></div>
+                </div>
+
+                <aside class="publication-breakdown">
+                    <div class="publication-breakdown-heading">
+                        <div>
+                            <span class="eyebrow">Archive tags</span>
+                            <h3>Publication mix</h3>
+                        </div>
+                    </div>
+                    <div id="publication-breakdown-list" class="breakdown-list"></div>
+                    <p class="publication-note">Classification follows the badges already recorded in the publication archive.</p>
+                </aside>
+            </section>
+
+            <div class="publication-toolbar" aria-label="Publication filters">
+                <label class="publication-search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input id="publication-search" type="search" placeholder="Search title, author, venue…" aria-label="Search publications">
+                </label>
+                <div class="publication-filters" role="group" aria-label="Filter by publication tag">
+                    <button type="button" class="publication-filter is-active" data-filter="all">All</button>
+                    <button type="button" class="publication-filter" data-filter="ccf-a">CCF-A</button>
+                    <button type="button" class="publication-filter" data-filter="ccf-b">CCF-B</button>
+                    <button type="button" class="publication-filter" data-filter="sci-i">SCI-I</button>
+                    <button type="button" class="publication-filter" data-filter="other">Other</button>
+                    <button type="button" id="publication-clear" class="publication-clear">Clear</button>
+                </div>
+            </div>
+
+            <section class="publication-list-panel" aria-labelledby="publication-list-title">
+                <div class="publication-list-heading">
+                    <div>
+                        <span class="eyebrow">Archive</span>
+                        <h2 id="publication-list-title">Full publication list</h2>
+                    </div>
+                    <span id="publication-result-count" class="publication-result-count" aria-live="polite">—</span>
+                </div>
+
+                <ol class="publication-list">
 
             <h3> 2026 </h3>
             <!-- 2026 Publications -->
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">
                         <b>	Generate and Filter: A GNN-Based Approach for Graph Anomaly Detection </b>
                     </a>
                     <br> Mengyu Li, Yonghao Liu, Ximing Li, Lan Huang, Fausto Giunchiglia, Yanchun Liang, Xiaoyue Feng*, Renchu Guan*
@@ -109,7 +193,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://arxiv.org/abs/2509.05751">
                         <b>	Unleashing Hierarchical Reasoning: An LLM-Driven Framework for Training-Free Referring Video Object Segmentation </b>
                     </a>
                     <br> Bingrui Zhao, Lin Yuanbo Wu, Xiangtian Fan, Ruyi He, Ximing Li*
@@ -118,7 +202,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3770855.3817644">
                         <b>	Are Rationales Necessary and Sufficient? Tuning LLMs for Explainable Misinformation Detection </b>
                     </a>
                     <br> Bing Wang, Rui Miao, Ximing Li*, Chen Shen*, Shaotian Yan, Changchun Li, Kaiyuan Liu, Xiaosong Yuan, Jieping Ye
@@ -127,15 +211,15 @@
             </li>
             
             <li>
-                <p> <a href="">
-                        <b>Postive-Unlabeled Learning with Extreme Scarcity of Labeled Positives </b>
+                <p> <a href="https://openreview.net/forum?id=pFfRIkaHIz">
+                        <b>Positive-Unlabeled Learning with Extreme Scarcity of Labeled Positives </b>
                     </a>
                     <br> Yuanchao Dai, Ximing Li*, Wei Wang, Changchun Li, Gang Niu, Masashi Sugiyama
                     <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Machine Learning (<b>ICML'26</b>)
                 </p>
             </li>
             <li>
-                <p> <a href="">
+                <p> <a href="https://openreview.net/forum?id=FFAHL32Wok">
                         <b>Decomposing the Basic Abilities of Large Language Models: Mitigating Cross-Task Interference in Multi-Task Instruct-Tuning </b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Changchun Li, Jinjin Chi, Gang Niu, Masashi Sugiyama
@@ -143,15 +227,15 @@
                 </p>
             </li>
             <li>
-                <p> <a href="">
-                        <b>Dual-Calibaration Multi-View Clustering via Compact Anchor Learning </b>
+                <p> <a href="https://openreview.net/forum?id=5znnBwyur9">
+                        <b>Dual-Calibration Multi-View Clustering via Compact Anchor Learning </b>
                     </a>
                     <br> Huibing Wang, Yuemeng Huang, Yawei Chen, Jiaxin Yang, Qian Liu, Jinjia Peng, Zetian Mi, Ximing Li
                     <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Machine Learning (<b>ICML'26</b>)
                 </p>
             </li>
              <li>
-                <p> <a href="">
+                <p> <a href="https://2026.ijcai.org/accepted-papers/">
                         <b>Perturbation Matters in Time Series Forecasting: A Wave-attention-aware Transformer Method </b>
                     </a>
                     <br> Yiming Wang, Yiqing Su, Ximing Li*, Changchun Li, Bing Wang
@@ -159,7 +243,7 @@
                 </p>
             </li>
              <li>
-                <p> <a href="">
+                <p> <a href="https://2026.ijcai.org/accepted-papers/">
                         <b>Label Confidence Recovery with High-order Label Correlation in Partial Multi-label Learning </b>
                     </a>
                     <br> Yuanchao Dai, Ximing Li*, Mingkun Xie, Xurui Li, Changchun Li
@@ -167,7 +251,7 @@
                 </p>
             </li>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.18653/v1/2026.findings-acl.918">
                         <b>On the Step Length Confounding in LLM Reasoning Data Selection </b>
                     </a>
                     <br> Bing Wang, Rui Miao, Chen Shen*, Shaotian Yan, Kaiyuan Liu, Ximing Li*, Xiaosong Yuan, Sinan Fan, Jun Zhang, Jieping Ye
@@ -176,7 +260,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_DELRER_Disease_Evolution-Informed_Longitudinal_Radiology_Report_Generation_CVPRF_2026_paper.html">
                         <b>DELRER: Disease Evolution-informed Longitudinal Radiology Report Generation </b>
                     </a>
                     <br> Kaiyu Wang, Bing Wang, Changchun Li, You Lu, Yaning Wang, Huimao Zhang, Ximing Li*
@@ -185,7 +269,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Ma_Learning_from_Label_Proportion_with_Dual-Proportion_Constraints_CVPRF_2026_paper.html">
                         <b>Learning from Label Proportion with Dual-proportion Constraints </b>
                     </a>
                     <br> Tianhao Ma, Ximing Li*, Changchun Li, Renchu Guan
@@ -194,43 +278,43 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://openreview.net/forum?id=JkFBc9anLi">
                         <b>Learning from Label Proportions via Proportional Value Classification </b>
                     </a>
                     <br> Tianhao Ma, Wei Wang, Ximing Li*, Gang Niu, Masashi Sugiyama
-                    <br> <img src="https://img.shields.io/badge/THU-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
+                    <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
                 </p>
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://openreview.net/forum?id=rdKL5Uxyim">
                         <b>Expert Heads: Robust Evidence Identification for Large Language Models </b>
                     </a>
                     <br> Qi Wu, Jianfeng Qu, Ximing Li, Zhixu Li
-                    <br> <img src="https://img.shields.io/badge/THU-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
+                    <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
                 </p>
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://openreview.net/forum?id=tb8DabMbMq">
                         <b>PU-Bench: A Unified Benchmark for Rigorous and Reproducible PU Learning </b>
                     </a>
                     <br> Qiuyi Chen, Haiyang Zhang*, Leqi Zhang, Changchun Li, Jia Wang, Wei Wang
-                    <br> <img src="https://img.shields.io/badge/THU-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
+                    <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
                 </p>
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://openreview.net/forum?id=Eem0IYVORm">
                         <b>Where Did This Sentence Come From? Tracing Provenance in LLM Reasoning Distillation </b>
                     </a>
                     <br> Kaiyuan Liu, Shaotian Yan, Rui Miao, Bing Wang, Chen Shen*, Jun Zhang, Jieping Ye
-                    <br> <img src="https://img.shields.io/badge/THU-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
+                    <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Learning Representations (<b>ICLR'26</b>)
                 </p>
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3774904.3792237">
                         <b>Simple-Sampling and Hard-Mixup with Prototypes to Rebalance Contrastive Learning for Text Classification </b>
                     </a>
                     <br> Mengyu Li, Yonghao Liu, Fausto Giunchiglia, Ximing Li, Xiaoyue Feng*, Renchu Guan*
@@ -239,7 +323,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3774904.3792324">
                         <b>Towards Practical LLM Unlearning: Efficient, Modular, and Retain-Free </b>
                     </a>
                     <br> Peng Liu, Peng-Fei Zhang, Jianfeng Qu*, Ximing Li, Zhixu Li, Pengpeng Zhao
@@ -248,7 +332,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tkde.2025.3650588">
                         <b>Detecting Misinformation by Uncovering Commonsense Conflicts with LLM Workflows </b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Changchun Li, Bingrui Zhao, Renchu Guan, Lin Yuanbo Wu, Jungong Han
@@ -257,7 +341,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tmm.2026.3687736">
                         <b>Harmful Visual Content Manipulation Matters in Misinformation Detection Under Multimedia Scenarios </b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Changchun Li, Jinjin Chi, Tianze Li, Renchu Guan, Shengsheng Wang
@@ -266,7 +350,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tmc.2025.3640170">
                         <b>Federated Learning-based Distributed Data Completion in Sparse Mobile CrowdSensing </b>
                     </a>
                     <br> En Wang, Baoju Li, Wenbin Liu*, Zengyi Han, Cong Wang, Ximing Li, Jie Wu
@@ -275,7 +359,7 @@
             </li>
             
              <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v40i26.39332">
                         <b>Denoising Mixup for Regression </b>
                     </a>
                     <br> Zhengzhang Hou, Zhanshan Li, Yanbo Liu, GeoffS. Nitschke, You Lu, Ximing Li∗
@@ -284,7 +368,7 @@
             </li>
 
              <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v40i28.39487">
                         <b>Semi-supervised Regression by Preserving Ranking Relationships between Close Unlabeled Samples </b>
                     </a>
                     <br> Ximing Li, Jiaxuan Jiang, Changchun Li*, You Lu, Renchu Guan 
@@ -293,7 +377,7 @@
             </li>
 
              <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v40i2.37081">
                         <b>Enhancing Multimodal Misinformation Detection by Replaying the Whole Story from Image Modality Perspective </b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Yanjun Wang, Changchun Li, Lin Yuanbo Wu, Buyu Wang, Shengsheng Wang 
@@ -302,7 +386,7 @@
             </li>
 
              <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v40i21.38865">
                         <b>SPARD: Single-step Inference with Adaptive Sampling in Residual Diffusion for Human Motion Prediction </b>
                     </a>
                     <br> Yiming Zhang, Baojia Han, Ximing Li, Wei Pang, Fausto Giunchiglia, Xiaoyue Feng, Renchu Guan
@@ -311,7 +395,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://cikm2026.diag.uniroma1.it/">
                         <b>	Unveiling Color-induced Emotions latent in Image-Text Expressions from Dual Perceptual Pathways </b>
                     </a>
                     <br> Changrong Min, Changchun Li, Bing Wang, You Lu, Ximing Li*
@@ -320,7 +404,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://cikm2026.diag.uniroma1.it/">
                         <b>	Two Important Things You Must Know! Revisiting Clickbait Detection from Perspectives of Humans' Cognition and Emotion </b>
                     </a>
                     <br> Changrong Min, Changchun Li, Jiayin Yan, Bing Wang, You Lu, Ximing Li*
@@ -329,7 +413,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://dl.acm.org/journal/tkdd">
                         <b>	Weakly-supervised Learning with Partial Multi-Labels by Leveraging Dual Label Correlation Perspectives </b>
                     </a>
                     <br> Ximing Li, Yuanchao Dai, Bing Wang, Changchun Li*, Renchu Guan, Fangming Gu, Jihong Ouyang
@@ -338,7 +422,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://conferences.sigappfr.org/wise2026/">
                         <b>	Beyond Fixed Bases: Dual-Adaptive Lattice Wavelet Network for Sequential Recommendation </b>
                     </a>
                     <br> Jiuyi Zhang, Sheng Lu, Wanli Zhu, Rui Li, Chenxu Lin, Luming Li, Fangming Gu*, Ximing Li, Haobo Lin, Changchun Li
@@ -347,7 +431,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tnnls.2026.3707387">
                         <b>	Towards Robust Weakly-Supervised Text Classification: Weak Supervision Generation and Correlation-aware Supervision Propagation </b>
                     </a>
                     <br> Ximing Li, Yiming Wang*, Chenglong Hu, Guiyu Mu, Bo Fu, Renchu Guan, Jihong Ouyang* 
@@ -356,7 +440,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://arxiv.org/abs/2605.16446">
                         <b>Avoiding Structural Failure Modes in Tabular Fair SSL: Online Primal-Dual Allocation under Confidence Gating </b>
                     </a>
                     <br> Hangchuan Liang, Changchun Li*
@@ -365,7 +449,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://arxiv.org/abs/2608.03370">
                         <b>DRPFNet: Dual-domain Residual Progressive Fusion Network for RGB-Thermal Object Detection </b>
                     </a>
                     <br> Zian Wang, Changchun Li*
@@ -374,7 +458,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.63887/jeti.2025.1.8.13">
                         <b>	基于能量驱动对齐与最小耗散融合的多模态情感分析模型 </b>
                     </a>
                     <br> 沐光雨, 戴佳秀, 李熙铭*
@@ -383,7 +467,7 @@
             </li>
             
              <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10707-026-00579-x">
                         <b>Geo-textual Rumor Detection in Location-based Social Media by Decomposing Spatial Subspaces </b>
                     </a>
                     <br> Chunyang Jiang, Bing Wang*, Jianfeng Qu*, Ximing Li
@@ -392,7 +476,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neucom.2026.134309">
                         <b>HumanBBD: Human Motion Prediction with Brownian Bridge Diffusion </b>
                     </a>
                     <br> Yiming Zhang, Baojia Han, Weichen Wang, Ximing Li, Fausto Giunchiglia, Bo Yang, Wei Pang, Xiaoyue Feng*, Renchu Guan* 
@@ -403,7 +487,7 @@
             <h3> 2025 </h3>
             <!-- 2025 Publications -->
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neunet.2025.108298">
                         <b>The More, The Merrier: Detecting Categorical Emotions from Texts with Cross-modal Insights </b>
                     </a>
                     <br> Changrong Min, Aimin Wang*, Ximing Li*
@@ -412,7 +496,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tbdata.2025.3627494">
                         <b>Correlation Matters in Deep Clustering: Transforming Clustering into Self-supervised Multi-Label Learning </b>
                     </a>
                     <br> Jihong Ouyang, Qingyi Meng, Ximing Li∗, Zhengjie Zhang, Bo Fu, Wenting Wang
@@ -421,7 +505,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/taslpro.2025.3623873">
                         <b>Bidirectional Propagation of Hierarchy-specific Features for Hierarchical Text Classification </b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Zhengnan Zhang, Bo Fu, Wenting Wang, Jihong Ouyang
@@ -430,7 +514,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.52202/085713-2456">
                         <b>Balancing Positive and Negative Classification Error Rates in Positive-Unlabeled Learning </b>
                     </a>
                     <br> Ximing Li, Yuanchao Dai, Bing Wang, Changchun Li*, Jianfeng Qu, Renchu Guan
@@ -439,7 +523,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.52202/085713-5672">
                         <b>A Closer Look to Positive-Unlabeled Learning from Fine-grained Perspectives: An Empirical Study </b>
                     </a>
                     <br> Yuanchao Dai, Zhengzhang Hou, Changchun Li, Yuanbo Xu, En Wang, Ximing Li*
@@ -448,7 +532,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.52202/085713-5361">
                         <b>Graph Few-Shot Learning via Adaptive Spectrum Experts and Cross-Set Distribution Calibration </b>
                     </a>
                     <br> Yonghao Liu, Yajun Wang, Chunli Guo, Wei Pang, Ximing Li, Fausto Giunchiglia, Xiaoyue Feng*, Renchu Guan*
@@ -457,7 +541,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.engappai.2025.111553">
                         <b>A Multi-Agent Deep Reinforcement Learning Method for Fully Noisy Observations </b>
                     </a>
                     <br> Kaiyu Wang, Danni Wang, Bohao Qu*, Menglin Zhang, Xianchang Wang, Ximing Li
@@ -466,7 +550,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.eswa.2025.129781">
                         <b>SUNRISE: Multi-Agent Reinforcement Learning via Neighbors' Observations under Fully Noisy Environments </b>
                     </a>
                     <br> Kaiyu Wang, Bohao Qu*, Menglin Zhang, Xianchang Wang, Ximing Li
@@ -475,7 +559,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3746252.3761022">
                         <b>Weakly Supervised Fine-grained Span-Level Framework for Chinese Radiology Report Quality Assurance</b>
                     </a>
                     <br> Kaiyu Wang, Lin Mu, Zhiyao Yang, Ximing Li*, Xiaotang Zhou, Wanfu Gao, Huimao Zhang
@@ -484,7 +568,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3746252.3761114">
                         <b>Variety Is the Spice of Life: Detecting Misinformation with Dynamic Environmental Representations</b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Yiming Wang, Changchun Li, Jiaxu Cui, Renchu Guan, Bo Yang*
@@ -493,7 +577,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3746027.3754759">
                         <b>Remember Past, Anticipate Future: Learning Continual Multimodal Misinformation Detectors</b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Mengzhe Ye, Changchun Li, Bo Fu, Jianfeng Qu, Lin Yuanbo Wu
@@ -502,7 +586,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://proceedings.mlr.press/v267/dai25i.html">
                         <b>Confidence Difference Reflects Various Supervised Signals in Confidence-Difference Classification</b>
                     </a>
                     <br> Yuanchao Dai, Ximing Li*, Changchun Li
@@ -511,7 +595,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2025/863">
                         <b>Robust Misinformation Detection by Visiting Potential Commonsense Conflict</b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Changchun Li, Bingrui Zhao, Bo Fu, Renchu Guan, Shengsheng Wang*
@@ -520,7 +604,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3726302.3729928">
                         <b>Collaboration and Controversy Among Experts: Rumor Early Detection by Tuning a Comment Generator</b>
                     </a>
                     <br> Bing Wang, Bingrui Zhao, Ximing Li*, Changchun Li, Wanfu Gao, Shengsheng Wang
@@ -630,7 +714,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3589334.3645587">
                         <b>A Simple but Effective Approach for Unsupervised Few-Shot Graph Classification</b>
                     </a>
                     <br> Yonghao Liu, Lan Huang, Bowen Cao, Ximing Li, Fausto Giunchiglia, Xiaoyue Feng, Renchu Guan
@@ -639,7 +723,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v38i17.29849">
                         <b>Aspect-Based Sentiment Analysis with Explicit Sentiment Augmentations</b>
                     </a>
                     <br> Jihong Ouyang, Zhiyao Yang, Silong Liang, Bing Wang, Yimeng Wang, Ximing Li*
@@ -648,7 +732,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v38i17.29881">
                         <b>Improving the Robustness of Knowledge-Grounded Dialogue via Contrastive Learning</b>
                     </a>
                     <br> Jiaan Wang, Jianfeng Qu, Kexin Wang, Zhixu Li, Wen Hua, Ximing Li, An Liu
@@ -657,7 +741,7 @@
             </li>            
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3664647.3681322">
                         <b>Harmfully Manipulated Images Matter in Multimodal Misinformation Detection</b>
                     </a>
                     <br> Bing Wang, Shengsheng Wang*, Changchun Li, Renchu Guan, Ximing Li*
@@ -666,7 +750,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3627673.3679799">
                         <b>Why Misinformation is Created? Detecting them by Integrating Intent Features</b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Changchun Li, Bo Fu, Songwen Pei, Shengsheng Wang
@@ -675,7 +759,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.ins.2024.121788">
                         <b>Closed Loop Networks for Open-set Semi-supervised Learning</b>
                     </a>
                     <br> Jihong Ouyang, Qingyi Meng, Ximing Li, Zhengjie Zhang, Changchun Li, Wenting Wang
@@ -684,7 +768,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.inffus.2024.102500">
                         <b>Escaping the Neutralization Effect of Modality Features Fusion in Multimodal Fake News Detection</b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Changchun Li, Shengsheng Wang*, Wanfu Gao
@@ -693,7 +777,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neunet.2024.106315">
                         <b>Unsupervised Sentence Representation Learning with Frequency-induced Adversarial Tuning and Incomplete Sentence Filtering</b>
                     </a>
                     <br> Bing Wang, Ximing Li*, Zhiyao Yang, Yuanyuan Guan, Jiayin Li, Shengsheng Wang*
@@ -702,16 +786,16 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3638353">
                         <b>Graph-based Text Classification by Contrastive Learning with Text-level Graph Augmentation</b>
                     </a>
                     <br> Ximing Li, Bing Wang, Yang Wang, Meng Wang
-                    <br> <img src="https://img.shields.io/badge/CCF-B-blue"/> ACM Transactions on Discovery from Data
+                    <br> <img src="https://img.shields.io/badge/CCF-B-blue"/> ACM Transactions on Knowledge Discovery from Data
                 </p>
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10115-024-02226-z">
                         <b>Anomaly Aware Symmetric Non-negative Matrix Factorization for Short Text Clustering</b>
                     </a>
                     <br> Ximing Li, Yuanyuan Guan, Bo Fu, Zhongxuan Luo
@@ -720,16 +804,16 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s00530-024-01444-3">
                         <b>Exploiting Multi-level Consistency Learning for Source-free Domain Adaptation</b>
                     </a>
-                    <br> Jihong Ouyang, Zhengjie Zhang, Jinjin Chi, Ximing Li
+                    <br> Jihong Ouyang, Zhengjie Zhang, Qingyi Meng, Ximing Li, Jinjin Chi
                     <br> Multimedia Systems
                 </p>
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tim.2024.3472902">
                         <b>Uncertainty-aware Sparse Transformer Network for Single Image Deraindrop</b>
                     </a>
                     <br> Bo Fu, Yunyun Jiang, Di Wang, Jiaxin Gao, Cong Wang, Ximing Li
@@ -738,16 +822,16 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3679018">
                         <b>Meta-GPS++: Enhancing Graph Meta-Learning with Contrastive Learning and Self-Training</b>
                     </a>
                     <br> Yonghao Liu, Mengyu Li, Ximing Li, Lan Huang, Fausto Giunchiglia, Yanchun Liang, Xiaoyue Feng*, Renchu Guan*
-                    <br> <img src="https://img.shields.io/badge/CCF-B-blue"/> ACM Transactions on Discovery from Data
+                    <br> <img src="https://img.shields.io/badge/CCF-B-blue"/> ACM Transactions on Knowledge Discovery from Data
                 </p>
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10489-024-05616-6">
                         <b>Consensus Representation-Driven Structured Graph Learning for Multi-View Clustering</b>
                     </a>
                     <br> Zhibin Gu, Jiazheng Yuan, Ximing Li, Songhe Feng*
@@ -759,7 +843,7 @@
             <!-- 2023 Publications -->
             <h3> 2023 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.18653/v1/2023.acl-long.566">
                         <b>Just Like a Human Would, Direct Access to Sarcasm Augmented with Potential Result and Reaction</b>
                     </a>
                     <br> Changrong Min, Hongfei Lin, Ximing Li*, Zhilin Wang, Liang Yang, Bo Xu
@@ -768,7 +852,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://proceedings.mlr.press/v202/cheng23a.html">
                         <b>Weakly Supervised Regression with Interval Targets</b>
                     </a>
                     <br> Xin Cheng, Yuzhou Cao, Ximing Li, Bo An, Lei Feng*
@@ -777,7 +861,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2023/571">
                         <b>Local and Global: Temporal Question Answering via Information Fusion</b>
                     </a>
                     <br> Yonghao Liu, Di Liang, Mengyu Li, Fausto Giunchiglia, Ximing Li, Sirui Wang, Wei Wu, Lan Huang, Xiaoyue Feng*, Rechu Guan*
@@ -786,7 +870,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v37i7.26043">
                         <b>Learning with Partial Labels from Semi-supervised Perspective</b>
                     </a>
                     <br> Ximing Li, Yuanzhi Jiang, Changchun Li*, Yiyuan Wang, Jihong Ouyang
@@ -795,7 +879,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v37i6.25868">
                         <b>TC-DWA: Text Clustering with Dual Word-level Augmentation</b>
                     </a>
                     <br> Bo Cheng, Ximing Li*, Yi Chang*
@@ -804,7 +888,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v37i6.25873">
                         <b>Variational Wasserstein Barycenters with c-Cyclical Monotonicity Regularization</b>
                     </a>
                     <br> Jinjin Chi, Zhiyao Yang, Ximing Li*, Jihong Ouyang, Renchu Guan
@@ -813,7 +897,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3583780.3615103">
                         <b>Unsupervised Aspect Term Extraction by Integrating Sentence-level Curriculum Learning with Token-level Self-paced Learning</b>
                     </a>
                     <br> Jihong Ouyang, Zhiyao Yang, Chuang Xuan, Bing Wang, Yiyuan Wang, Ximing Li*
@@ -822,7 +906,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.inffus.2023.03.015">
                         <b>Finding Hate Speech with Auxiliary Emotion Detection from Self-supervised Multi-label Learning Perspective</b>
                     </a>
                     <br> Changrong Min, Hongfei Lin, Ximing Li*, He Zhao, Junyu Lu, Liang Yang, Bo Xu
@@ -831,7 +915,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.knosys.2023.110513">
                         <b>S3MAP: Semisupervised Aspect-based Sentiment Analysis with Masked Aspect Prediction</b>
                     </a>
                     <br> Zhiyao Yang, Bing Wang, Ximing Li, Wenting Wang, Jihong Ouyang
@@ -840,7 +924,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s11042-023-15749-4">
                         <b>Adaptive Prototype and Consistency Alignment for Semi-supervised Domain Adaptation</b>
                     </a>
                     <br> Ouyang Jihong, Zhengjie Zhang, Qingyi Meng, Ximing Li*
@@ -849,7 +933,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s00500-022-07771-9">
                         <b>Weakly Supervised Prototype Topic Model with Discriminative Seed Words: Modifying the Category Prior by Self-exploring Supervised Signals</b>
                     </a>
                     <br> Ximing Li, Bing Wang, Yue Wang, Jihong Ouyang
@@ -860,7 +944,7 @@
             <!-- 2022 Publications -->
             <h3> 2022 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2022/468">
                         <b>Weakly-supervised Text Classification with Wasserstein Barycenters Regularization</b>
                     </a>
                     <br> Jihong Ouyang, Yiming Wang, Ximing Li*
@@ -869,7 +953,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3477495.3531978">
                         <b>Few-shot Node Classification on Attributed Networks with Graph Meta-learning</b>
                     </a>
                     <br> Yonghao Liu, Mengyu Li, Ximing Li, Fausto Giunchiglia, Xiaoyue Feng, Renchu Guan
@@ -878,7 +962,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3477495.3531964">
                         <b>Deployable and Continuable Meta-Learning-Based Recommender System with Fast User-Incremental Updates</b>
                     </a>
                     <br> Renchu Guan, Haoyu Pang, Fausto Giunchiglia, Ximing Li, Xuefeng Yang, Xiaoyue Feng
@@ -887,16 +971,16 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://openreview.net/forum?id=NH29920YEmj">
                         <b>Who Is Your Right Mixup Partner in Positive and Unlabeled Learning</b>
                     </a>
                     <br> Changchun Li, Ximing Li*, Lei Feng, Jihong Ouyang
-                    <br> <img src="https://img.shields.io/badge/THU-A-red"/> International Conference on Learning Representations (<b>ICLR'22</b>)
+                    <br> <img src="https://img.shields.io/badge/CCF-A-red"/> International Conference on Learning Representations (<b>ICLR'22</b>)
                 </p>
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3485447.3511963">
                         <b>PNMTA: A Pretrained Network Modulation and Task Adaptation Approach for User Cold-Start Recommendation</b>
                     </a>
                     <br> Haoyu Pang, Fausto Giunchiglia, Ximing Li, Renchu Guan, Xiaoyue Feng
@@ -905,7 +989,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://aclanthology.org/2022.coling-1.581/">
                         <b>A Contrastive Cross-Channel Data Augmentation Framework for Aspect-Based Sentiment Analysis</b>
                     </a>
                     <br> Bing Wang, Liang Ding*, Qihuang Zhong, Ximing Li, Dacheng Tao
@@ -914,7 +998,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3511808.3557261">
                         <b>Consistent, Balanced, and Overlapping Label Trees for Extreme Multi-label Learning</b>
                     </a>
                     <br> Zhiqi Ge, Yuanyuan Guan, Ximing Li*, Bo Fu
@@ -923,7 +1007,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/tnnls.2022.3222336">
                         <b>Eliminating Negative Word Similarities for Measuring Document Distances: A Thoroughly Empirical Study on Word Mover's Distance</b>
                     </a>
                     <br> Bo Cheng, Ximing Li*, Yi Chang*
@@ -932,7 +1016,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10115-022-01705-5">
                         <b>Approximate Posterior Inference for Bayesian Models: Black-box Expectation Propagation</b>
                     </a>
                     <br> Ximing Li, Changchun Li, Jinjin Chi, Jihong Ouyang
@@ -943,7 +1027,7 @@
             <!-- 2021 Publications -->
             <h3> 2021 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.18653/v1/2021.acl-long.391">
                         <b>Semi-Supervised Text Classification with Balanced Deep Representation Distributions</b>
                     </a>
                     <br> Changchun Li, Ximing Li*, Jihong Ouyang
@@ -952,7 +1036,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2021/433">
                         <b>Layer-Assisted Neural Topic Modeling over Document Networks</b>
                     </a>
                     <br> Yiming Wang, Ximing Li*, Jihong Ouyang
@@ -961,7 +1045,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.18653/v1/2021.findings-emnlp.2">
                         <b>Extracting Topics with Simultaneous Word Co-occurrence and Semantic Correlation Graphs: Neural Topic Modeling for Short Texts</b>
                     </a>
                     <br> Yiming Wang, Ximing Li*, Xiaotang Zhou, Jihong Ouyang
@@ -970,7 +1054,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3459637.3482251">
                         <b>Detecting the Fake Candidate Instances: Ambiguous Label Learning with Generative Adversarial Networks</b>
                     </a>
                     <br> Changchun Li, Ximing Li*, Jihong Ouyang, Yiming Wang
@@ -979,7 +1063,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3459637.3482303">
                         <b>To Be or not to Be, Tail Labels in Extreme Multi-label Learning</b>
                     </a>
                     <br> Zhiqi Ge, Ximing Li*
@@ -988,7 +1072,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3459637.3482490">
                         <b>VPALG: Paper-publication Prediction with Graph Neural Networks</b>
                     </a>
                     <br> Renchu Guan, Yonghao Liu, Xiaoyue Feng*, Ximing Li*
@@ -997,7 +1081,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s11280-021-00970-8">
                         <b>Extracting Nonlinear Neural Topics with Neural Variational Bayes</b>
                     </a>
                     <br> Yiming Wang, Ximing Li*, Jihong Ouyang, Zeqi Guo, Yimeng Wang
@@ -1006,7 +1090,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10994-021-05962-3">
                         <b>Topic Extraction from Extremely Short Texts with Variational Manifold Regularization</b>
                     </a>
                     <br> Ximing Li, Yang Wang, Jihong Ouyang, Meng Wang
@@ -1015,7 +1099,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1002/int.22795">
                         <b>Approximate Continuous Optimal Transport with Copulas</b>
                     </a>
                     <br> Jinjin Chi, Bilin Wang, Huiling Chen, Lejun Zhang*, Ximing Li*, Jihong Ouyang
@@ -1024,7 +1108,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/TNNLS.2020.2984635">
                         <b>RMoR-Aion: Robust Multi-output Regression by Simultaneously Alleviating Input and Output Noises</b>
                     </a>
                     <br> Ximing Li, Yang Wang, Zhao Zhang, Richang Hong, Meng Wang
@@ -1035,7 +1119,7 @@
             <!-- 2020 Publications -->
             <h3> 2020 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2020/191">
                         <b>Recovering Accurate Labeling Information from Partially Valid Data for Effective Multi-Label Learning</b>
                     </a>
                     <br> Ximing Li, Yang Wang
@@ -1044,7 +1128,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v34i03.5624">
                         <b>Reduction and Local Search for Weighted Graph Coloring Problem</b>
                     </a>
                     <br> Yiyuan Wang, Shaowei Cai, Shiwei Pan, Ximing Li, Minghao Yin
@@ -1053,7 +1137,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/icdm50108.2020.00038">
                         <b>Semantics-assisted Wasserstein Learning for Topic and Word Embeddings</b>
                     </a>
                     <br> Changchun Li, Ximing Li*, Jihong Ouyang, Yiming Wang, 
@@ -1062,7 +1146,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3340531.3411885">
                         <b>Learning with Noisy Partial Labels by Simultaneously Leveraging Global and Local Consistencies</b>
                     </a>
                     <br> Changchun Li, Ximing Li*, Jihong Ouyang
@@ -1071,7 +1155,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s11390-020-0272-1">
                         <b>Color Image Super-Resolution and Enhancement with Inter-Channel Details at Trivial Cost</b>
                     </a>
                     <br> Chuangye Zhang, Yan Niu, Tie Ru, Ximing Li
@@ -1082,7 +1166,7 @@
             <!-- 2019 Publications -->
             <h3> 2019 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2019/300">
                         <b>Approximate Optimal Transport for Continuous Densities with Copulas</b>
                     </a>
                     <br> Jinjin Chi, Jihong Ouyang, Ximing Li*, Yang Wang, Meng Wang
@@ -1091,7 +1175,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3308558.3313397">
                         <b>Classifying Extremely Short Texts by Exploring Semantic Centroids in Word Mover's Distance Space</b>
                     </a>
                     <br> Changchun Li, Jihong Ouyang, Ximing Li*
@@ -1100,7 +1184,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1609/aaai.v33i01.33017884">
                         <b>Dirichlet Multinomial Mixture with Variational Manifold Regularization: Topic Modeling over Short Texts</b>
                     </a>
                     <br> Ximing Li, Jiaojiao Zhang, Jihong Ouyang
@@ -1109,7 +1193,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3357384.3357997">
                         <b>A Fine-grained and Noise-aware Method for Neural Relation Extraction</b>
                     </a>
                     <br> Jianfeng Qu, Wen Hua, Dantong Ouyang, Xiaofang Zhou, Ximing Li
@@ -1118,7 +1202,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neucom.2019.10.069">
                         <b>Robust Stochastic Block Model</b>
                     </a>
                     <br> Zhijuan Xu, Xueyan Liu, Xianjuan Cui, Ximing Li, Bo Yang
@@ -1127,7 +1211,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.patrec.2019.01.018">
                         <b>Topic Representation: Finding More Representative Words in Topic Models</b>
                     </a>
                     <br> Jinjin Chi, Jihong Ouyang, Changchun Li, Xueyang Dong, Ximing Li*, Xinhua Wang
@@ -1136,7 +1220,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s11042-018-6732-8">
                         <b>A Salt and Pepper Noise Image Denoising Method based on the Generative Classification</b>
                     </a>
                     <br> Bo Fu, Xiaoyang Zhao, Chuanming Song, Ximing Li, Xiang-Hai Wang
@@ -1145,16 +1229,16 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1093/comjnl/bxy037">
                         <b>Relational Biterm Topic Model: Short Text Topic Modeling using Word Embeddings</b>
                     </a>
                     <br> Ximing Li, Ang Zhang, Changchun Li, Lantian Guo, Wenting Wang, Jihong Ouyang
-                    <br> The Computer Journal
+                    <br> <img src="https://img.shields.io/badge/CCF-B-blue"/> The Computer Journal
                 </p>
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1080/0952813x.2017.1409277">
                         <b>Empirical Study on Variational Inference Methods for Topic Models</b>
                     </a>
                     <br> Jinjin Chi, Jihong Ouyang, Ximing Li, Changchun Li
@@ -1165,7 +1249,7 @@
             <!-- 2018 Publications -->
             <h3> 2018 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.24963/ijcai.2018/333">
                         <b>Variance Reduction in Black-box Variational Inference by Adaptive Importance Sampling</b>
                     </a>
                     <br> Ximing Li, Changchun Li, Jinjin Chi, Jihong Ouyang
@@ -1174,7 +1258,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1145/3269206.3271671">
                         <b>Dataless Text Classification: A Topic Modeling Approach with Document Manifold</b>
                     </a>
                     <br> Ximing Li, Changchun Li, Jinjin Chi, Jihong Ouyang, Chenliang Li
@@ -1183,7 +1267,7 @@
             </li>   
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://aclanthology.org/C18-1162/">
                         <b>A Pseudo Label based Dataless Naive Bayes Algorithm for Text Classification with Seed Words</b>
                     </a>
                     <br> Ximing Li, Bo Yang
@@ -1192,7 +1276,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1137/1.9781611975321.68">
                         <b>Black-box Expectation Propagation for Bayesian Models</b>
                     </a>
                     <br> Ximing Li, Changchun Li, Jinjin Chi, Jihong Ouyang, Wenting Wang, 
@@ -1201,7 +1285,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.ipm.2018.05.009">
                         <b>Exploring Coherent Topics by Topic Modeling with Term Weighting</b>
                     </a>
                     <br> Ximing Li, Ang Zhang, Changchun Li, Jihong Ouyang, Yi Cai
@@ -1210,7 +1294,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1631/fitee.1601668">
                         <b>Supervised Topic Models with Weighted Words: Multi-label Document Classification</b>
                     </a>
                     <br> Yue-peng Zou, Jihong Ouyang, Ximing Li*
@@ -1219,7 +1303,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10489-017-1004-2">
                         <b>Two Time-efficient Gibbs Sampling Inference Algorithms for Biterm Topic Model</b>
                     </a>
                     <br> Xiaotang Zhou, Jihong Ouyang, Ximing Li
@@ -1228,7 +1312,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.3233/ida-173609">
                         <b>A More Time-efficient Gibbs Sampling Algorithm based on SparseLDA for Latent Dirichlet Allocation</b>
                     </a>
                     <br> Xiaotang Zhou, Jihong Ouyang, Ximing Li
@@ -1237,7 +1321,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.ins.2018.04.071">
                         <b>Filtering out the Noise in Short Text Topic Modeling</b>
                     </a>
                     <br> Ximing Li, Yue Wang, Ang Zhang, Changchun Li, Jinjin Chi, Jihong Ouyang
@@ -1246,7 +1330,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10115-017-1099-0">
                         <b>Short text Topic Modeling by Exploring Original Documents</b>
                     </a>
                     <br> Ximing Li, Changchun Li, Jinjin Chi, Jihong Ouyang, 
@@ -1255,7 +1339,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neunet.2018.01.006">
                         <b>Distant Supervision for Neural Relation Extraction Integrated with Word Attention and Property Features</b>
                     </a>
                     <br> Jianfeng Qu, Dantong Ouyang, Wen Hua, Yuxin Ye, Ximing Li
@@ -1267,7 +1351,7 @@
             <!-- 2016 Publications -->
             <h3> 2016 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://aclanthology.org/C16-1015/">
                         <b>Integrating Topic Modeling with Word Embeddings by Mixtures of vMFs</b>
                     </a>
                     <br> Ximing Li, Jinjin Chi, Changchun Li, Jihong Ouyang, Bo Fu
@@ -1276,7 +1360,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1137/1.9781611974348.82">
                         <b>Sparse Hybrid Variational-Gibbs Algorithm for Latent Dirichlet Allocation</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1285,7 +1369,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neucom.2014.07.053">
                         <b>Supervised Topic Models for Multi-label Classification</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1294,7 +1378,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s11390-016-1636-4">
                         <b>Tuning the Learning Rate for Stochastic Variational Inference</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang
@@ -1303,7 +1387,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1080/0952813x.2015.1042924">
                         <b>A Kernel-based Centroid Classifier using Hypothesis Margin</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1312,7 +1396,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s11042-014-2414-3">
                         <b>Boosting scene understanding by hierarchical Pachinko allocation</b>
                     </a>
                     <br> Jihong Ouyang, Ximing Li, Hongtu Li
@@ -1321,7 +1405,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10844-014-0352-1">
                         <b>Labelset Topic Model for Multi-label Document Classification</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1332,7 +1416,7 @@
             <!-- 2015 Publications -->
             <h3> 2015 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.3969/j.issn.0372-2112.2015.09.029">
                         <b>Multi-grain Sentiment/Topic Model based on LDA</b>
                     </a>
                     <br> Jihong Ouyang, Yanhui Liu, Ximing Li, Xiaotang Zhou
@@ -1341,7 +1425,7 @@
             </li>
             
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.neucom.2014.07.053">
                         <b>Supervised Topic Models for Multi-label Classification</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1350,7 +1434,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10791-014-9244-9">
                         <b>Group Topic Model: Organizing Topics into Groups</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, You Lu, Xiaotang Zhou, Tian Tian
@@ -1359,7 +1443,7 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1007/s10489-014-0595-0">
                         <b>Supervised Labeled Latent Dirichlet Allocation for Document Categorization</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou, You Lu, Yanhui Liu
@@ -1369,7 +1453,7 @@
 
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1016/j.patrec.2015.04.012">
                         <b>Centroid Prior Topic Model for Multi-label Classification</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1380,7 +1464,7 @@
             <!-- 2014 Publications -->
             <h3> 2014 </h3>
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.1109/PAAP.2014.13">
                         <b>Adaptive Centroid-based Algorithm for Document Clustering</b>
                     </a>
                     <br> Ximing Li, Jihong Ouyang, Xiaotang Zhou
@@ -1389,19 +1473,20 @@
             </li>
 
             <li>
-                <p> <a href="">
+                <p> <a href="https://doi.org/10.3233/978-1-61499-419-0-1075"> 
                         <b>Momentum Online LDA for Large-scale Datasets</b>
                     </a>
                     <br> Jihong Ouyang, You Lu, Ximing Li
-                    <br> European Conference on Artificial Intelligence (<b>ECAI'14</b>)
+                    <br> <img src="https://img.shields.io/badge/CCF-B-blue"/> European Conference on Artificial Intelligence (<b>ECAI'14</b>)
                 </p>
             </li>
 
 
-        </ol>
-
-
-    </div>
+                </ol>
+                <p id="publication-empty-state" class="publication-empty-state" hidden>No publications match the current search and filter.</p>
+            </section>
+        </div>
+    </main>
 
 
 
@@ -1478,9 +1563,9 @@
 
                             <address>
                                 <strong>Email: </strong> 
-                                <a href="mailto:#">liximing86@gmail.com</a> <br>
-                                <a href="mailto:#">changchunli93@gmail.com</a> <br>
-                                <a href="mailto:#">wangbing1416@gmail.com</a> <br>
+                                <a href="mailto:liximing86@gmail.com">liximing86@gmail.com</a> <br>
+                                <a href="mailto:changchunli93@gmail.com">changchunli93@gmail.com</a> <br>
+                                <a href="mailto:wangbing1416@gmail.com">wangbing1416@gmail.com</a> <br>
                             </address>
                         </section>
 
@@ -1512,10 +1597,10 @@
     <script src="script/jquery.easing.min.js"></script>
     <script src="script/jquery.scrollTo.js"></script>
     <script src="script/wow.min.js"></script>
+    <script src="script/publications.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="script/custom.js"></script>
 
 </body>
 
 </html>
-

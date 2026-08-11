@@ -1,58 +1,58 @@
 (function ($) {
-	$(".navbar-fixed-top").addClass("top-nav-collapse");
+    "use strict";
 
-	new WOW().init();
+    function currentPage() {
+        var path = window.location.pathname.split("/").pop();
+        return path || "index.html";
+    }
 
-	jQuery(window).load(function() { 
-		jQuery("#preloader").delay(100).fadeOut("slow");
-		jQuery("#load").delay(100).fadeOut("slow");
-	});
+    $(function () {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
 
+        if (window.WOW) new WOW().init();
 
-	//jQuery to collapse the navbar on scroll
-	// $(window).scroll(function() {
-	// 	if ($(".navbar").offset().top > 50) {
-	// 		$(".navbar-fixed-top").addClass("top-nav-collapse");
-	// 	} else {
-	// 		$(".navbar-fixed-top").removeClass("top-nav-collapse");
-	// 	}
-	// });
+        $("#preloader").delay(100).fadeOut("slow");
+        $("#load").delay(100).fadeOut("slow");
 
-	//jQuery for page scrolling feature - requires jQuery Easing plugin
-	$(function() {
-		$('.navbar-nav li a').bind('click', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500, 'easeInOutExpo');
-			event.preventDefault();
-		});
-		$('.page-scroll a').bind('click', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500, 'easeInOutExpo');
-			event.preventDefault();
-		});
-	});
+        var page = currentPage();
+        $(".navbar-nav li").removeClass("active").each(function () {
+            var link = $(this).find("a").first().attr("href");
+            if (link && link.split("/").pop() === page) $(this).addClass("active");
+        });
 
-	$(function() {
-		$(window).scroll(function () {
-				if ($(this).scrollTop() > 50) {
-					$('#back-to-top').fadeIn();
-				} else {
-					$('#back-to-top').fadeOut();
-				}
-				 
-			});
-			// // scroll body to 0px on click
-			// $('#back-to-top').click(function () {
-			// 	$('body,html').animate({
-			// 		scrollTop: 0
-			// 	}, 400);
-			// 	return false;
-			// });
-	});
+        $("body.page-people .teampeople").each(function () {
+            if (!$(this).find(".avatar").length) $(this).addClass("people-alumni");
+        });
 
+        $(".navbar-nav li a").on("click", function (event) {
+            var href = $(this).attr("href") || "";
+            var target = href.charAt(0) === "#" ? $(href) : $();
 
-})(jQuery);
+            if (target.length) {
+                event.preventDefault();
+                $("html, body").stop().animate({
+                    scrollTop: target.offset().top - 68
+                }, 700, "easeInOutExpo");
+            }
+
+            if ($(".navbar-collapse").hasClass("in") && $.fn.collapse) {
+                $(".navbar-collapse").collapse("hide");
+            }
+        });
+
+        $(".page-scroll a").on("click", function (event) {
+            var href = $(this).attr("href") || "";
+            var target = href.charAt(0) === "#" ? $(href) : $();
+            if (!target.length) return;
+
+            event.preventDefault();
+            $("html, body").stop().animate({
+                scrollTop: target.offset().top - 68
+            }, 700, "easeInOutExpo");
+        });
+
+        $(window).on("scroll", function () {
+            $("#back-to-top").toggle($(this).scrollTop() > 300);
+        });
+    });
+}(jQuery));
